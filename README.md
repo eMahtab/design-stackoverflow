@@ -77,4 +77,28 @@ public class Bounty {
 }
 ```
 
+# Question
+```java
+public class Question implements Search {
+  private String title;
+  private String description;
+  private int viewCount;
+  private Date creationTime;
+  private Date updateTime;
+  
+  private QuestionStatus status;
+  private Member askingMember;
+  private Bounty bounty;
+  
+  private List<Comment> comments;
+  private List<Answer> answers;
+
+  public boolean close();
+  public boolean undelete();
+  public boolean addComment(Comment comment);
+  public boolean addBounty(Bounty bounty);
+
+}
+```
+
 
