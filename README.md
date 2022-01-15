@@ -129,5 +129,34 @@ public class Notification {
 }
 
 ```
+# Comment, Answer
+```java
+public class Comment {
+  private String text;
+  private Date creationTime;
+  private int flagCount;
+  private int voteCount;
 
+  private Member commentedBy;
 
+  public boolean incrementVoteCount();
+}
+
+public class Answer {
+  private String answerText;
+  private Date creationTime;
+  private boolean isAccepted;
+  private int voteCount;
+  private int flagCount;
+  
+  private Member answeredBy;
+  
+  public boolean incrementVoteCount();
+}
+
+```
+
+# References :
+https://www.educative.io/courses/grokking-the-object-oriented-design-interview/m2YWoEq06AR
+
+https://www.youtube.com/watch?v=eTB0nxb-j-Q
