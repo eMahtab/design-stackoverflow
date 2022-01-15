@@ -77,9 +77,9 @@ public class Bounty {
 }
 ```
 
-# Question
+# Question and QuestionStatus
 ```java
-public class Question implements Search {
+public class Question{
   private String title;
   private String description;
   private int viewCount;
@@ -98,6 +98,13 @@ public class Question implements Search {
   public boolean addComment(Comment comment);
   public boolean addBounty(Bounty bounty);
 
+}
+
+public enum QuestionStatus{
+  OPEN,
+  CLOSED,
+  ON_HOLD,
+  DELETED
 }
 ```
 
