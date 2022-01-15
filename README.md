@@ -19,7 +19,7 @@ We will be designing a system with the following requirements:
 13. The system should also be able to identify most frequently used tags in the questions.
 
 
-## Account, AccountStatus, Member, Admin, Moderator, 
+## Account, AccountStatus, Member, Admin, Moderator
 ```java
 // For simplicity, we are not defining getter and setter functions. The reader can
 // assume that all class attributes are private and accessed through their respective
@@ -66,3 +66,15 @@ public class Moderator extends Member {
   public boolean undeleteQuestion(Question question);
 }
 ```
+
+# Bounty
+```java
+public class Bounty {
+  private int reputation;
+  private Date expiry;
+
+  public boolean modifyReputation(int reputation);
+}
+```
+
+
