@@ -108,4 +108,26 @@ public enum QuestionStatus{
 }
 ```
 
+# Badge, Tag, Notification
+```java
+public class Badge {
+  private String name;
+  private String description;
+}
+
+public class Tag {
+  private String name;
+  private String description;
+}
+
+public class Notification {
+  private int notificationId;
+  private Date createdOn;
+  private String content;
+
+  public boolean sendNotification();
+}
+
+```
+
 
